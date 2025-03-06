@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/responsivePortfolio/contact.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="icon" href="/bscoe/choy.png" type="image/icon type">
+</head>
+<!-- Desktop Navigation -->
+<nav id="desktop-nav">
+  <div class="logo">John Michael Lou Chiong</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+ 
+
+  </ul>
+</nav>
+
+<!-- Hamburger Navigation for Mobile -->
+<nav id="hamburger-nav">
+  <div class="logo">Portfolio</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contacts</a></li>
+
+    </div>
+  </div>
+</nav>
+<style>
+    body {
+    background-color: #fdfbe8; /* Light background color */
+  }
+  .social-media-icon-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .social-icon {
+    font-size: 30px;
+    color: #3b3829; /* Gold color from the reference */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .social-icon:hover {
+    color: #3e3a2a; 
+    
+  }
+</style>
+<body>
+  <div class="arch_contact_us_duplicate">
+    <div class="responsive-container-block big-container">
+      <div class="responsive-container-block container">
+        <div class="responsive-cell-block wk-mobile-12 wk-desk-5 wk-tab-10 wk-ipadp-5">
+          <p class="text-blk section-head">Get in touch </p>
+          <p class="text-blk section-subhead">We’re here to help! For any inquiries, support, or assistance, please reach out to us through the following channels:</p>
+        </div>
+        <div class="responsive-cell-block wk-ipadp-6 wk-mobile-12 wk-desk-5 wk-tab-9">
+          <div class="form-wrapper">
+            <input class="input" name="Name" placeholder="Name">
+            <input class="input" name="Contact Number" placeholder="Contact Number">
+            <input class="input" name="Email" placeholder="Email">
+            <textarea class="textinput" placeholder="Message"></textarea>
+            <button class="button">Send</button>
+          </div>
+          <div class="social-media-icon-container">
+            <a href="https://www.facebook.com/share/1Dohh7ys2R/" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lou_cho0?igsh=MWV2MDF0ZDRhdmo3NQ==" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@_louchow?_t=ZS-8uRPgDESLLt&_r=1" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/john-michael-lou-evero-chiong-402527354 " class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+          <p>&copy; 2025 John Michael Lou Chiong. All Rights Reserved.</p>
+          <ul class="footer-links">
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

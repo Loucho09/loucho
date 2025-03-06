@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/bscoe/choy.png" type="image/icon type">
+
+</head>
+
+<body>
+
+<!-- Desktop Navigation -->
+<nav id="desktop-nav">
+  <div class="logo">John Michael Lou Chiong</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  
+
+  </ul>
+</nav>
+
+<!-- Hamburger Navigation for Mobile -->
+<nav id="hamburger-nav">
+  <div class="logo">Portfolio</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contacts</a></li>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="/bscoe/sdad.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="/bscoe/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Technical Support<br />Backend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="/bscoe/user-graduate-solid.svg" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bato School of Fisheries <br />Gateway International School</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p id="3rd">
+            I am a dedicated Technical Support Specialist with experience in backend development, passionate about
+            problem-solving and optimizing digital solutions. My background in troubleshooting, system administration,
+            and software development enables me to enhance user experiences and drive efficiency.
+            <br> <br>
+            I pursued my education at Bato School of Fisheries and Gateway International School, where I developed a
+            strong foundation in technology and analytical thinking. With a keen eye for detail and a commitment to
+            continuous learning, I strive to bridge the gap between technology and seamless functionality.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="/bscoe/angles-down-solid.svg" alt="Arrow icon" class="icon arrow"
+      onclick="location.href='./#experience'" />
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 John Michael Lou Chiong. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
