@@ -683,78 +683,53 @@ footer a:hover {
 
 
 
-
 /* ABOUT SECTION */
 #about {
     display: block; 
-  
     width: 100%;
- padding-top: 10%; 
-    height: 50vh;
-    background-image: url(/bscoe/bgreen.png);
+    height: 100vh; /* Fill the entire viewport height */
+    background-image: url('/bscoe/bgreen.png'); /* Background image */
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     margin: 0;
-    margin-top: 2%;
-    opacity: 1;
-    /* Set opacity to 1 for visibility */
-    transform: translateY(0);
-    /* Reset transform to original position */
-    animation: fadeInUp 0.8s ease-in-out forwards;
-    color: #000000;
-
-    /* Animation for smooth entry */
-
+    padding: 0; /* Removed padding to utilize full height */
+    opacity: 1; /* Set opacity to 1 for visibility */
+    transform: translateY(0); /* Reset transform to original position */
+    animation: fadeInUp 0.8s ease-in-out forwards; /* Animation for smooth entry */
+    color: #000000; /* Default text color */
 }
-
-
 /* Keyframes for the fadeInUp animation */
 @keyframes fadeInUp { 
     0% {
-        opacity: 0;
-        /* Start invisible */
-        transform: translateY(50px);
-        /* Start slightly below */
+        opacity: 0; /* Start invisible */
+        transform: translateY(50px); /* Start slightly below */
     }
-
     100% { 
-        opacity: 1;
-        /* End visible */
-        transform: translateY(5);
-        /* End at original position */
+        opacity: 1; /* End visible */
+        transform: translateY(0); /* End at original position */
     }
 }
 
 /* Optional styles for text inside the about section */
 #about h1 {
-
     color: rgb(0, 0, 0);
-
     text-align: center;
-
-    margin: 10px 0;
+    margin: 90px 0;
 }
 
 #about p {
-    color: rgb(255, 255, 255);
-   font-size: medium;
+    color: rgb(233, 233, 233);
+    font-size: large;
     text-align: center;
-
-    margin: 10px 0;
-
+    margin: 100px 0;
 }
 
 #about .section__text__p1 {
     color: #000;
-    font-weight: 800;
-
+    font-weight: 900;
 }
-
 
 .about-details-container .details-container {
     padding: 1.5rem;
@@ -763,7 +738,7 @@ footer a:hover {
     border-radius: 1rem;
     border: 0.1rem solid rgba(4, 4, 4, 0.097);
     text-align: center;
-    opacity: 0.;
+    opacity: 0; /* Fixed opacity */
     transform: translateY(-50px);
     animation: slideFadeIn 0.8s ease-out forwards;
     animation-delay: 0.5s;
@@ -774,10 +749,7 @@ footer a:hover {
 .about-details-container .details-container:hover {
     transform: translateY(-45px) translateY(-5px);
     box-shadow: 0 10px 20px rgba(255, 246, 246, 0.3);
-    background-color: 
-    
-    rgba(56, 119, 106, 0.414);
-    /* Slightly lighter on hover */
+    background-color: rgba(56, 119, 106, 0.414); /* Slightly lighter on hover */
 }
 
 /* Keyframes for animation */
@@ -795,60 +767,45 @@ footer a:hover {
     }
 }
 
-#div .details-container{
+#div .details-container {
    background-color: #0056b3;
 }
 
 /* Layout & Styling */
 .about-containers {
-    background-color: rgba#98938e;
+    
     display: flex;
-    gap: 2rem;
-    /* Space between containers */
-    margin: 2rem 0;
-    /* Vertical margin */
+    gap: 2rem; /* Space between containers */
+    margin: 2rem 0; /* Vertical margin */
 }
 
 .about-details-container {
     display: flex;
-    flex-direction: column;
-    /* Stack children vertically */
-    justify-content: center;
-    /* Center children */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children */
 }
 
 .about-pic {
-    border-radius: 2rem;
-    /* Rounded corners */
+    border-radius: 2rem; /* Rounded corners */
 }
 
 .arrow {
-    position: absolute;
-    /* Absolute positioning */
-    right: -5rem;
-    /* Positioning to the right */
-    bottom: 2.5rem;
-    /* Positioning from the bottom */
+    position: absolute; /* Absolute positioning */
+    right: -5rem; /* Positioning to the right */
+    bottom: 2.5rem; /* Positioning from the bottom */
 }
 
 .section-container {
     display: flex;
-    gap: 4rem;
-    /* Space between sections */
-    height: 60%;
-    /* Height of the section */
+    gap: 4rem; /* Space between sections */
+    height: 60%; /* Height of the section */
 }
 
 .section__pic-container {
-    height: 400px;
-    /* Fixed height for image container */
-    width: 400px;
-    /* Fixed width for image container */
-    margin: auto 0;
-    /* Centering */
+    height: 400px; /* Fixed height for image container */
+    width: 400px; /* Fixed width for image container */
+    margin: auto 0; /* Centering */
 }
-
-
 
 
 
@@ -1117,36 +1074,79 @@ h1.title {
 
 
 
-
 /* PROJECTS SECTION */
 #projects {
     margin: 0;
     background-image: url('/bscoe/csh.jpeg');
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 100vh; /* Set height to fill the entire viewport height */
     animation: fadeInUp 1s ease-in-out forwards;
     animation-delay: 0.3s;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
+#projects {
+    position: relative; /* Set position relative for the overlay */
+    /* Existing styles... */
+}
 
-/* Project Containers */
+.overlay {
+    position: absolute; /* Position overlay absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure overlay is above the background but below content */
+}
+
+.content {
+    position: relative; /* Position content above the overlay */
+    z-index: 2; /* Ensure content is on top of the overlay */
+    color: white; /* Change text color for contrast */
+}
+
+/* General Container Styles */
 .color-container {
-    border-color: rgb(109, 106, 106);
-    background: rgb(250, 250, 250);
+    border: 2px solid rgba(109, 106, 106, 0.5);
+    background: rgba(250, 250, 250, 0.111); /* Semi-transparent background */
+    backdrop-filter: blur(10); /* Apply blur effect */
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    animation: fadeInUp 1s ease-in-out forwards;
-    animation-delay: 0.3s;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
 }
+
+/* Hover Effect */
+.color-container:hover {
+    transform: scale(1.05); /* Slightly scale up */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Increased shadow effect */
+    background-color: rgba(250, 250, 250, 0.203); /* Slightly darker/sharper white on hover */
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform transition */
+}
+
+/* Hover Effect for Title */
+.project-title:hover {
+    color: #34A853; /* Change color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow for depth */
+}
+
 
 /* Fade-in and move up animation */
 @keyframes fadeInUp {
@@ -1154,18 +1154,26 @@ h1.title {
         opacity: 0;
         transform: translateY(50px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(244, 244, 249, 0.5); /* Slightly transparent background */
+    color: #333;
+}
+
 /* Project Image */
 .project-img {
     border-radius: 2rem;
     width: 90%;
-    height: 90%;
+    height: auto; /* Changed to auto to maintain aspect ratio */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -1203,7 +1211,7 @@ h1.title {
 .btn-color-2.project-btn {
     background-color: white;
     color: black;
-    border: 1px solid #34A853;
+    border: 1px solid #2e4c36;
 }
 
 .btn-color-2.project-btn:hover {
@@ -1212,8 +1220,6 @@ h1.title {
     transform: scale(1.1);
     cursor: pointer;
 }
-
-
 
 /* General Styles */
 body {
