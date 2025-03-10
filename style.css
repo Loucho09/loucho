@@ -17,9 +17,30 @@ html {
 }
 
 p {
-    color: rgb(234, 234, 234);
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+
+}
+p.section__text__p2{
+    color: black ;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    
 }
 
+p.section__text__p1{
+    color: black;
+    
+}
 /* TRANSITION */
 
 a,
@@ -54,6 +75,7 @@ nav {
     transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
+
 .nav-links {
     display: flex;
     gap: 1.5rem;
@@ -62,13 +84,18 @@ nav {
     padding: 0;
 }
 
+
+
+
 .nav-links li {
     position: relative;
     transition: transform 0.2s ease;
 }
 
+
+
 .nav-links a {
-    color: #cac9c9;
+    color: #909090;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
@@ -76,9 +103,16 @@ nav {
     border-radius: 8px;
     transition: all 0.3s ease;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
+
+
+
+
 .nav-links a:hover {
+
     color: #ff7b54;
     background: rgba(154, 142, 139, 0.1);
 
@@ -484,6 +518,7 @@ section {
 }
 
 .section__text__p1 {
+    
     text-align: center;
     margin-top: 10%;
 }
@@ -727,7 +762,8 @@ footer a:hover {
 }
 
 #about .section__text__p1 {
-    color: #000;
+    color: #faefef;
+    font-size:large;
     font-weight: 900;
 }
 
@@ -1029,8 +1065,9 @@ article p {
 p.section__text__p1 {
  
 
-    color: #fffbfb; /* Pure Black */
+    color: #ffffff; /* Pure Black */
     font-size: 2.rem; /* Adjust as needed */
+    font-size: larger;
     font-weight: 700;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.924); /* Soft shadow for depth */
 }
